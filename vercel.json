@@ -1,12 +1,24 @@
 {
   "routes": [
+    { 
+      "handle": "filesystem"
+    },
     {
-      "src": "/assets/(.*)",
-      "headers": { "Content-Type": "application/javascript" }
+      "src": "/assets/.*\\.js$",
+      "headers": {
+        "Content-Type": "application/javascript"
+      }
+    },
+    {
+      "src": "/assets/.*\\.css$",
+      "headers": {
+        "Content-Type": "text/css"
+      }
     },
     {
       "src": "/(.*)",
       "dest": "/index.html"
     }
-  ]
+  ],
+  "cleanUrls": true
 } 
