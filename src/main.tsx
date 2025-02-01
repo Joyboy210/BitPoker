@@ -8,10 +8,10 @@ import CharacterView from "./CharacterView.tsx";
 import { useState } from "react";
 
 function MainSwitch() {
-    const [name, setName] = useState<string>();
-    const [screen, setScreen] = useState<number>(0);
-    const [code, setCode] = useState<string>();
-    const [inscriptionId, setInscriptionId] = useState<string>();
+    // const [name, setName] = useState<string>();
+    // const [screen, setScreen] = useState<number>(0);
+    // const [code, setCode] = useState<string>();
+    const [inscriptionId] = useState<string>();
 
     const router = createBrowserRouter([
         {
